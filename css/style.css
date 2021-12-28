@@ -180,7 +180,7 @@ color: var(--maincolor);
     display: none;
   }
   
-  @media (max-width:780px) {
+  @media screen and (min-width:200px) and (max-width:780px) {
     
     .nav > .nav-btn {
       display: inline-block;
@@ -310,7 +310,56 @@ color: var(--maincolor);
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (min-width:200px) and (max-width: 700px){
+  .home{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 75vh;
+    background: var(--e8color);
+  }
+
+  .home-content{
+    position: absolute;
+    margin: 30% 10% 0 10%;
+    /* text-align: center; */
+  
+    /* display: flex; */
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .hometext .title {
+    color: var(--maincolor);
+    font-size: 30px;
+    margin-right: 150px;
+  }
+
+  .hometext .home-desc {
+    margin: 20px 150px 20px 0;
+    color: var(--maincolor);
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.hometext .home-img a img.androidImage {
+  width: 130px;
+  height: 40px;
+  
+  display: inline-block;
+  justify-content: center;
+  margin: 0 50px 0 0;
+  margin-bottom: 8px;}
+
+  .hometext .home-img a img.iosImage {
+    width: 150px;
+    height: 60px;
+    margin: 0 50px 0 0;
+}
+
+
   .home-bg{
     flex: -1;
     margin-top: 10px;
@@ -596,10 +645,19 @@ bottom: 120px;
 }
 
 
-@media (max-width:950px){
+@media screen and (min-width:200px) and  (max-width:950px){
   .count-container{
       
-      padding: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    /* background: #021325; */
+    min-height: 20vh;
+    /* margin-top: 4; */
+    /* gap: 10px; */
+    padding-bottom: 15px;
   }
 
   .count-container .count-image{
@@ -764,13 +822,13 @@ bottom: 120px;
 }
 
 
-@media screen and (max-width:550px) {
+@media screen  and (min-device-width: 250px) and (max-device-width: 550px)  {
   .cardBox {
    margin-bottom: -105%;
     margin-right:0%;
     text-align: center;
-    min-height: 100vh;
-    perspective: 500px;
+    min-height: 30vh;
+    perspective: 200px;
     transition: all 0.3s ease 0s;
     justify-content: center; 
     width: 21.7%;
