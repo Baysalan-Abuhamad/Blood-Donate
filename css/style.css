@@ -865,8 +865,13 @@ bottom: 120px;
 
 
 @media screen  and (min-device-width: 200px) and (max-device-width:950px)  {
+
+  .boxesContainer{
+    min-height:120vh;
+    margin-top: 15px;
+  }
   .cardBox {
-   margin-bottom: 0;
+   margin-bottom: -30%;
     margin-right:0%;
     height: 230px;
     width: 45%;
