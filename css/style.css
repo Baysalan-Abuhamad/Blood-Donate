@@ -863,7 +863,7 @@ bottom: 120px;
 }
 
 
-@media screen  and (min-device-width: 200px) and (max-device-width: 750px)  {
+@media screen  and (min-device-width: 200px) and (max-device-width: 800px)  {
   .cardBox {
    margin-bottom: -30%;
     margin-right:0%;
@@ -900,7 +900,7 @@ bottom: 120px;
   }
 
   #weight{
-    width: 122%;
+    width: 125%;
     background-size: cover;
   }
 
