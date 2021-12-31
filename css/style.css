@@ -863,16 +863,18 @@ bottom: 120px;
 }
 
 
-@media screen  and (min-device-width: 200px) and (max-device-width: 800px)  {
+@media screen  and (min-device-width: 200px) and (max-device-width:950px)  {
   .cardBox {
    margin-bottom: -30%;
     margin-right:0%;
+    height: 240px;
+    width: 46%;
     text-align: center;
     min-height:50vh;
     perspective: 200px;
     transition: all 0.3s ease 0s;
     justify-content: center; 
-    width: 18.7%;
+    
   }
   .boxesContainer {
     min-height: 100vh;
