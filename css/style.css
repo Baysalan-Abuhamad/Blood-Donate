@@ -830,6 +830,7 @@ bottom: 120px;
 }
 
 .cardBox:nth-child(2) .card {
+  width: 100%;
   -webkit-animation: giro 1.5s 1;
   animation: giro 1.5s 1;
 }
@@ -865,10 +866,10 @@ bottom: 120px;
 
 @media screen  and (min-device-width: 200px) and (max-device-width:950px)  {
   .cardBox {
-   margin-bottom: -30%;
+   margin-bottom: -20%;
     margin-right:0%;
     height: 240px;
-    width: 46%;
+    width: 45%;
     text-align: center;
     min-height:50vh;
     perspective: 200px;
