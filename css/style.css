@@ -180,8 +180,17 @@ color: var(--maincolor);
     display: none;
   }
   
-  @media screen and (min-width:200px) and (max-width:780px) {
+  @media screen and (min-width:200px) and (max-width:850px) {
     
+    .nav {
+      height: 80px;
+      width: 102%;
+      margin-right: -15px;
+      background-color: var(--e8color);
+      position: fixed;
+      z-index: 10000;
+  }
+
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -219,8 +228,10 @@ color: var(--maincolor);
     }
     .nav > .nav-links > a {
       display: block;
-      width: 30%;
+      width: 50%;
     }
+
+    
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
@@ -256,8 +267,8 @@ color: var(--maincolor);
   padding-top: 45px;
   margin-top:100px;
   flex: 2;
-  margin-left: 5%;
-  text-align: center;  
+  margin-left: 15;
+   text-align: center;  
 }
 
 
@@ -333,6 +344,7 @@ color: var(--maincolor);
   .hometext .title {
     color: var(--maincolor);
     font-size: 30px;
+    margin-top: 20%;  
     margin-right: 150px;
   }
 
@@ -350,13 +362,13 @@ color: var(--maincolor);
   
   display: inline-block;
   justify-content: center;
-  margin: 0 50px 0 0;
+  margin: 0 80px 0 -80px;
   margin-bottom: 8px;}
 
   .hometext .home-img a img.iosImage {
     width: 150px;
     height: 60px;
-    margin: 0 50px 0 0;
+    margin: 0 80px 0 -80px;
 }
 
 
@@ -420,7 +432,28 @@ color: var(--maincolor);
   
     
     }
+ @media screen and (min-width:200px) and (max-width:950px){
+  .section-header1 .section-title1 {
+    font-size: 30px;
+    margin-top: -30px;
+    text-transform: capitalize;
+    color: var(--whitecolor);
+    font-weight: 800;
+}
 
+.box-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom,#800202 20%,var(--e8color),var(--e8color),var(--e8color));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -170px;
+  padding-bottom: 80px;
+}
+ }
 
 
 
@@ -450,7 +483,7 @@ footer .wave{
 
 footer .wave#wave1{
 z-index: 5;
-opacity: 1;
+opacity: 075;
 bottom: 0;
 animation: animateWave 4s linear infinite;
 }
@@ -463,10 +496,8 @@ footer .wave#wave2{
   }
 
   footer .wave#wave3{
-      z-index: 1000;
-      opacity: 0.2;
-      bottom: 20px;
-      animation: animateWave 3s linear infinite;
+    z-index: 1000;
+    animation: animateWave 3s linear infinite;
       }
       
       footer .wave#wave4{
@@ -660,6 +691,14 @@ bottom: 120px;
     padding-bottom: 15px;
   }
 
+  .count-container .content .count-down .count-box {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid var(--maincolor);
+    text-align: center;
+    /* flex: 1 1 50px; */
+}
+
   .count-container .count-image{
     display: flex;
     flex: 1 1 300px;
@@ -675,11 +714,13 @@ bottom: 120px;
       text-align: center;
   }
 
-  .count-container .content .paragraph p{
-      font-size: 20px;
-      margin-top: -20%;
-  }
-
+  
+  .count-container .content .paragraph p {
+    font-size: 22;
+    width: 100%;
+    text-align: center;
+    margin-top: -90px;
+}
   .count-container .content .count-down
   {
       gap: 5px;
@@ -744,7 +785,7 @@ bottom: 120px;
   background-size: cover;
   color: var(--maincolor);
   display: block;
-  font-size: 1.2em;
+  font-size: 20px;
   height: 100%;
   padding: 0.8em;
   position: absolute;
@@ -822,17 +863,23 @@ bottom: 120px;
 }
 
 
-@media screen  and (min-device-width: 250px) and (max-device-width: 550px)  {
+@media screen  and (min-device-width: 200px) and (max-device-width: 750px)  {
   .cardBox {
-   margin-bottom: -105%;
+   margin-bottom: -30%;
     margin-right:0%;
     text-align: center;
-    min-height: 30vh;
+    min-height:50vh;
     perspective: 200px;
     transition: all 0.3s ease 0s;
     justify-content: center; 
-    width: 21.7%;
+    width: 18.7%;
   }
+  .boxesContainer {
+    min-height: 100vh;
+    justify-content: center;
+    margin-top: -10%;
+    margin-bottom: 2%;
+}
 
   .add{
     margin-top: 7%;
@@ -850,6 +897,19 @@ bottom: 120px;
     width:100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
+  }
+
+  #weight{
+    width: 125%;
+    background-size: cover;
+  }
+
+  #age{
+    width: 105%;
+  }
+  #healthy{
+    width: 100%;
+    margin-right: 18px;
   }
 }
 
@@ -971,6 +1031,9 @@ bottom: 120px;
   );
   border-radius: 15px;
 }
+.impcard .content ul{
+  list-style: disc;
+}
 
 .impcard .content ul li{
   color: var(--maincolor);
@@ -984,11 +1047,11 @@ bottom: 120px;
 }
 
 
-@media(max-width:800px){
+@media screen and (min-width:200px)and (max-width:800px){
   .impcard {
     position: relative;
-    width: 85%;
-    height: 350px;
+    width: 94%;
+    height: 400px;
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
@@ -996,19 +1059,33 @@ bottom: 120px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 35px;
       margin: 0 auto;
-      padding: 40px 0;
+      padding: 30px 0;
   }
-
+  .impcard .content ul{
+    list-style: disc;
+  }
   .impcard .content ul li{
     color: var(--maincolor);
     font-size: 16px;
     padding: 5px;
   }
+
+  .impcard .face1 {
+    box-sizing: border-box;
+    padding:15px;
+  }
+
+    .face h2 {
+      margin: 0;
+      font-size:24px;
+
+    }
   
   .impcard .content ul li:hover{
     color: #000;
     cursor: pointer;
   }
+ 
   
 }
 
@@ -1082,7 +1159,7 @@ bottom: 120px;
 
 
 
-@media (max-width:600px){
+@media screen and (min-width:200px) and (max-width:600px){
   .portfolio .portfolio-item {
     margin-bottom: 50px;
   }
@@ -1093,10 +1170,18 @@ bottom: 120px;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: -30%;
     margin-bottom: 10%;
   }
 
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 110%;
+    margin-right: -15%;
+}
   .portfolio-wrap img{
      margin-bottom: -10px;
      margin-right: 17%;
@@ -1113,7 +1198,7 @@ bottom: 120px;
     justify-content: center;
     align-items: center;
     min-height: 105vh;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
     background:var(--e8color);
   }
@@ -1122,7 +1207,7 @@ bottom: 120px;
   .contact-container{
     position: relative;
     z-index: 2 ;
-    width: 85%;
+    width: 90%;
     max-width: 1000px;
     padding: 50px;
     background: rgba(0,0,0,0.2);
@@ -1193,7 +1278,7 @@ bottom: 120px;
     box-shadow: none;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     padding:0 10px ;
     z-index:1;
      color: #000 ;
@@ -1274,7 +1359,7 @@ bottom: 120px;
     color: var(--maincolor);
   }
 
-  @media(max-width:768){
+  @media screen and(min-width:200px) and (max-width:768){
     .contact::before{  
       transform: translate(-200px,-180px);
     }
@@ -1283,14 +1368,33 @@ bottom: 120px;
       transform:  translate(220px,180px);
     }
 
-    .contact-container{
-      padding: 20px;
-    }
+    .contact-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1000px;
+      padding:50px 0;
+      background: rgba(0,0,0,0.2);
+      box-shadow: 0 25px 45px rgb(0 0 0 / 50%);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-right: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      backdrop-filter: blur(50px);
+  }
+    .contact-container .row100 .col {
+      position: relative;
+      width: 80%;
+      padding: 0;
+      margin: 0;
+  }
 
     .contact-container h2{
       font-size:28px ;
     }
-  }
+    
+}
 
 
   /*====================================================== footer section =========================================*/
@@ -1350,7 +1454,31 @@ text-align: center;
     color:#000;
   }
 
+@media screen and (min-width:200px) and (max-width:800px)
+{
+  .nav-links-footer a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 10%;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #810000;
+  min-height: 20vh;
+  padding: 20px 50px;
 
+}
+
+.end {
+  padding: 20px 0;
+  height:80vh;
+}
+}
 
 
 
