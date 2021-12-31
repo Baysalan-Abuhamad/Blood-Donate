@@ -866,7 +866,7 @@ bottom: 120px;
 
 @media screen  and (min-device-width: 200px) and (max-device-width:950px)  {
   .cardBox {
-   margin-bottom: -10%;
+   margin-bottom: 0;
     margin-right:0%;
     height: 230px;
     width: 45%;
