@@ -867,16 +867,16 @@ bottom: 120px;
 @media screen  and (min-device-width: 200px) and (max-device-width:950px)  {
 
   .boxesContainer{
-    min-height:120vh;
+    min-height:130vh;
     margin-top: 15px;
   }
   .cardBox {
    margin-bottom: -30%;
     margin-right:0%;
-    height: 230px;
+    height: 270px;
     width: 45%;
     text-align: center;
-    min-height:50vh;
+    min-height:60vh;
     perspective: 200px;
     transition: all 0.3s ease 0s;
     justify-content: center; 
@@ -895,11 +895,11 @@ bottom: 120px;
   }
 
   .card {
-    font-size: 18px;
+    font-size: 15px;
     position:relative;
     cursor: default;
     background-size: cover;
-    height: 200x;
+    height: 200px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
     width:100%;
@@ -925,7 +925,6 @@ bottom: 120px;
 @media screen and (max-width:1200px) {
   .cardBox {
    height: 270px;
- 
     width: 46%;
     text-align: center;
     justify-content: center;
@@ -933,14 +932,14 @@ bottom: 120px;
   }
 
   .card {
-    font-size: 18px;
+    font-size: 15px;
     position:relative;
     cursor: default;
     background-size: cover;
-    height: 250px;
+    height: 275px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
-    width:100%;
+    width:105%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
   }
